@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        Sunho Jung
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/gif/png" href="images/sunhologo1.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+    <header>
+        <!--<img src="images/selfie.JPG" width="400" height="400" alt="Sunho Jung" />-->
+    </header>
+
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand ml-3 navbar-name" href="#">Zoey Jung</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li id="homelink" class="nav-item active">
+                    <a class="nav-link page-scroll" href="#homepage">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li id="profilelink" class="nav-item">
+                    <a class="nav-link page-scroll" href="#profilepage">PROFILE</a>
+                </li>
+                <li id="worklink" class="nav-item">
+                    <a class="nav-link page-scroll" href="#workpage">WORK</a>
+                </li>
+                <li id="connectlink" class="nav-item">
+                    <a class="nav-link page-scroll" href="#connectpage">CONNECT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div id="homepage" class="text-center">
+            <div class="mb-4" style="position: relative;">
+                <img src="images/IMG_0884_bw_blur.jpg" alt="background" style="width: 95%; margin-top: 2rem" />
+                <div class="centeredText">Web developer<br />Full-stack developer</div>
+            </div>
+        </div>       
+        <div id="profilepage" class="content" style="height: 700px">
+            <div class="header">
+                PROFILE
+            </div>
+            <hr class="line-heading-header" />
+            <div class="row">
+                <div class="col-2 d-flex align-items-center" style="margin-top: 3em; margin-bottom: 3em;">
+                    <img src="images/sunhoselfie.jpg" alt="selfie" style="border-radius: 50%;border: 5px solid #a31224; width: 100%;  margin: 0" />
+                </div>
+                <div class="col-9 d-flex align-items-center">
+                    <p>Hi! My name is Zoey. <br />
+                    I am a full-stack developer based in London, Ontario. 
+                    <br />
+                        I am passionate about writing code and building software that improves our lives. 
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3>HIGHLIGHTS</h3>
+                <hr class="line-heading" />
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+        <div id="workpage" class="content">
+            <div class="header">
+                WORK
+            </div>
+            <hr class="line-heading-header" />
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                    <div class="image">
+                        <img id="myImg" class="img img-responsive" src="images/chatapp/mainImg.PNG" alt="chatapp" />
+                        <div class="middle">
+                            <div id="chatappText" class="middleText">CHAT IT UP</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                    <div class="image">
+                        <img id="doggowalkoimg" class="img img-responsive" src="images/doggo_walko/homecropped.png" alt="doggowalko" />
+                        <div class="middle">
+                            <div id="doggowalkoText" class="middleText">DOGGO WALKO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                    <div class="image">
+                        <img id="gofishimg" class="img img-responsive" src="images/GoFish/gofishplayingcropped.png" alt="gofish" />
+                        <div class="middle">
+                            <div id="gofishText" class="middleText">Go Fish</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="firstModal" class="modal">
+                <span id="firstClose" class="close">&times;</span>
+                <div class="row" style="background-color: white; display: flex; justify-content: space-evenly; align-items: center;">
+                    <div class="imgContainer col-lg-5 col-sm-12">
+                        <div class="slideImgs fade">
+                            <img src="images/chatapp/mainImg.PNG" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/chatapp/chatroom.PNG" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/chatapp/chatterlist.PNG" />
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-6" style="padding: 3rem;">
+                        <h3>Chat it up!</h3>
+                        <hr class="line-heading">
+                        <div class="techTags row col-auto">
+                            <span class="tagstext">ReactJS</span>
+                            <span class="tagstext">NodeJS</span>
+                            <span class="tagstext">Socket.io</span>
+                        </div>
+                        <p>A simple messenger application using ReactJS. </p>
+                        <p>It allows user to create a room, enter an existing chatroom or a newly created room and start chatting. It shows people in the chatroom and indicates if other people are typing. </p>
+                        <p>Click <a href="https://sunho-chat2020.herokuapp.com/" >here</a> to run this app.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="secondModal" class="modal">
+                <span id="secondClose" class="close">&times;</span>
+                <div class="row" style="background-color: white; display: flex; justify-content: space-evenly; align-items: center;">
+                    <div class="imgContainer col-lg-5 col-sm-12">
+                        <div class="slideImgs fade">
+                            <img src="images/doggo_walko/home.png" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/doggo_walko/register.png" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/doggo_walko/login.png" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/doggo_walko/calendar.png" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/doggo_walko/picktime.png" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/doggo_walko/planadded.png" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/doggo_walko/editprofile.png" />
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-6" style="padding: 3rem;">
+                        <h3>DOGGO WALKO</h3>
+                        <hr class="line-heading">
+                        <div class="techTags row col-auto">
+                            <span class="tagstext">ReactJS</span>
+                            <span class="tagstext">React Native</span>
+                            <span class="tagstext">Expo</span>
+                            <span class="tagstext">Firebase</span>
+                            <span class="tagstext">NodeJS</span>
+                        </div>
+                        <p>A mobile application using React Native. </p>
+                        <p>Firebase was added for login functionality and storage. User can pick a date and a time to add a plan for anything such as walk or vet appointment and check if there is any plan on calendar. When a date is clicked, the screen shows the plans for the date. User also can add edit the profile. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="thirdModal" class="modal">
+                <span id="thirdClose" class="close">&times;</span>
+                <div class="row" style="background-color: white; display: flex; justify-content: space-evenly; align-items: center;">
+                    <div class="imgContainer col-lg-5 col-sm-12">
+                        <div class="slideImgs fade">
+                            <img src="images/GoFish/gofishEmpty.PNG" />
+                        </div>
+                        <div class="slideImgs fade">
+                            <img src="images/GoFish/gofishplaying.PNG" />
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-6" style="padding: 3rem;">
+                        <h3>Go Fish</h3>
+                        <hr class="line-heading">
+                        <div class="techTags row col-auto">
+                            <span class="tagstext">C#</span>
+                            <span class="tagstext">WCF</span>
+                        </div>
+                        <p>A multi-player game application that incorporates multiple assemblies and WCF. </p>
+                        <p>This application allows user to play Go fish with other players. A WCF service was implemented, hosted, configured and consume in a LAN computing environment.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="connectpage" class="content" style="height: 700px">
+            <div class="header">
+                CONNECT
+            </div>
+            <hr class="line-heading-header" />
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-4 section ml-4 p-3 pl-4 sectionLeft">
+                    <p style="font-style:italic"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;London, ON</p>
+                    <p style="font-style:italic"><i class="fa fa-phone"></i>&nbsp;&nbsp;+1-226-998-4215</p>
+                    <p style="font-style:italic" class="mb-0"><i class="fa fa-envelope"></i>&nbsp;&nbsp;zoeyj804@gmail.com</p>
+                </div>
+                <div class="col-4 section mr-4 text-center p-3 sectionRight my-auto">
+                    <a href="https://github.com/sunho804"><i class="fa fa-github fa-2x followIcon" aria-hidden="true"></i>&nbsp;</a>
+                    <a href="https://www.facebook.com/profile.php?id=100003164938876&ref=bookmarks"><i class="fa fa-facebook fa-2x followIcon" aria-hidden="true"></i>&nbsp;</a>
+                    <a href="https://www.linkedin.com/in/zoey-jung-515b63137/"><i class="fa fa-linkedin-square fa-2x followIcon" aria-hidden="true"></i>&nbsp;</a>
+                </div>
+            </div>
+            <div class="contactSection text-center">
+                <form id="contact_form">
+                    <h2 class="text-center m-4">Get in touch!</h2>
+                    <br />
+                    <div class="row ml-3">
+                        <label class="text-center my-2 mr-2 col-3">Name:</label>
+                        <div class="form-inline my-2 my-lg-0">
+                            <input class="mr-sm-2 forminput" type="text" name="name" placeholder="Name" aria-label="Name">
+                        </div>
+                    </div>
+                    <div class="row ml-3">
+                        <label class="text-center my-2 mr-2 col-3">Email:</label>
+                        <div class="form-inline my-2 my-lg-0">
+                            <input class="mr-sm-2 forminput" type="email" placeholder="Email" name="email" aria-label="Email">
+                        </div>
+                    </div>
+                    <div class="row ml-3 mb-2">
+                        <label class="text-center my-2 mr-2 col-3">Message:</label>
+                        <textarea name="message" rows="6" class="mt-2 col-6" placeholder="Message"></textarea>
+                    </div>
+                    <div class="my-3">
+                        <input id="sendEmailBtn" class="btn my-sm-0 rounded sendbtn" type="submit" value="SEND" />
+                    </div>
+                </form>
+            </div>
+    
+        <footer class="footer">
+            <div class="mt-3 text-center container">
+                <p>Copyright &copy; 2020 Zoey Jung</p>
+                <p style="color: dimgray; font-size: smaller">Contact Zoey at <a style="text-decoration:none; color: dimgray" href="mailto:zoeyj804@gmail.com">zoeyj804@gmail.com</a></p>
+            </div>
+            
+        </footer>
+    </div>
+    <script>
+        //scroll the page fix the nav bar
+        window.onscroll = function () {
+            fixedNav()
+        };
+
+        var navbar = document.getElementById("menu");
+
+        //get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        //add the sticky class
+        function fixedNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        //navbar highlight when page scroll
+        var navPos = $('nav').position().top;
+        var lastPos = 0;
+        var lockTimer;
+
+        $(window).on('scroll', function() {
+            var pos = $(window).scrollTop();
+            var pos2 = pos + 200;
+            var scrollButton = pos + $(window).height();
+
+            //nav list highlight
+            if (pos2 > $('#homepage').offset().top) {
+                highlightLink('homelink');
+            }
+            if (pos2 > $('#profilepage').offset().top) {
+                highlightLink('profilelink');
+            }
+            if (pos2 > $('#workpage').offset().top) {
+                highlightLink('worklink');
+            }
+            if (pos2 > $('#connectpage').offset().top) {
+                highlightLink('connectlink');
+            }
+
+             // Prevent Hover on Scroll
+            clearTimeout(lockTimer);
+            if (!$('body').hasClass('disable-hover')) {
+            $('body').addClass('disable-hover');
+            }
+
+            lockTimer = setTimeout(function() {
+            $('body').removeClass('disable-hover');
+            }, 500);
+        })
+
+        function highlightLink(anchor) {
+            var navlink = document.getElementById(anchor);
+
+            $('li').removeClass('active');
+            //$('li').find('#' + anchor).addClass('active');
+            navlink.classList.add("active");
+        }
+
+        //img slideshow
+        var slideIndex = 0;
+        var slideIndex2 = 0;
+        var slideIndex3 = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides1 = document.getElementById("firstModal").getElementsByClassName("slideImgs");
+            for (var i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none";
+            }
+            slideIndex++;
+            if(slideIndex > slides1.length) {slideIndex = 1;}
+            slides1[slideIndex  - 1].style.display = "block";
+
+            var slides2 = document.getElementById("secondModal").getElementsByClassName("slideImgs");
+            for (var i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";
+            }
+            slideIndex2++;
+            if(slideIndex2 > slides2.length) {slideIndex2 = 1;}
+            slides2[slideIndex2  - 1].style.display = "block";
+
+            var slides3 = document.getElementById("thirdModal").getElementsByClassName("slideImgs");
+            for (var i = 0; i < slides3.length; i++) {
+                slides3[i].style.display = "none";
+            }
+            slideIndex3++;
+            if(slideIndex3 > slides3.length) {slideIndex3 = 1;}
+            slides3[slideIndex3  - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+
+        //modal
+        // Get the modal
+        var modal1 = document.getElementById("firstModal");
+        var modal2 = document.getElementById("secondModal");
+        var modal3 = document.getElementById("thirdModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById("myImg");
+        var img2 = document.getElementById("doggowalkoimg");
+        var img3 = document.getElementById("gofishimg")
+
+        var appText1 = document.getElementById("chatappText");
+        var appText2 = document.getElementById("doggowalkoText");
+        var appText3 = document.getElementById("gofishText");
+        appText1.onclick = function(){
+        modal1.style.display = "block";
+        }
+        img1.onclick = function(){
+        modal1.style.display = "block";
+        }
+
+        appText2.onclick = function(){
+        modal2.style.display = "block";
+        }
+        img2.onclick = function(){
+        modal2.style.display = "block";
+        }
+
+        appText3.onclick = function(){
+        modal3.style.display = "block";
+        }
+        img3.onclick = function(){
+        modal3.style.display = "block";
+        }
+
+        // Get the <span> element that closes the modal
+        //var span = document.getElementsByClassName("close")[0];
+        var close1 = document.getElementById("firstClose");
+        var close2 = document.getElementById("secondClose");
+        var close3 = document.getElementById("thirdClose");
+
+        // When the user clicks on <span> (x), close the modal
+        close1.onclick = function() {
+        modal1.style.display = "none";
+        }
+        close2.onclick = function() {
+        modal2.style.display = "none";
+        }
+        close3.onclick = function() {
+        modal3.style.display = "none";
+        }
+
+        //redirect connect page
+
+        // var contactBtn = document.getElementById("contactBtn");
+
+        // contactBtn.onclick = redirectConnect;
+
+        // function redirectConnect() {
+        //     window.location.href = 'connect.html';
+        // }
+
+         //contact js
+        //need to check if it works later
+        var form_id_js = "contact_form";
+
+        var data_js = {
+            "access_token": "kyxt8w85qi1d4pndwgqs93a5"
+        };
+
+        function js_onSuccess() {
+            // remove this to avoid redirect
+            //window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+            sendButton.value = 'email sent';
+        }
+
+        function js_onError(error) {
+            // remove this to avoid redirect
+            //window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+            sendButton.value = 'could not send email';
+        }
+
+        var sendButton = document.getElementById("sendEmailBtn");
+
+        function js_send() {
+            sendButton.value = 'Sending...';
+            sendButton.disabled = true;
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (request.readyState == 4 && request.status == 200) {
+                    js_onSuccess();
+                } else if (request.readyState == 4) {
+                    js_onError(request.response);
+                }
+            };
+
+            var subject = document.querySelector("#" + form_id_js + " [name='name']").value;
+            var email = document.querySelector("#" + form_id_js + " [name='email']").value;
+            var message = document.querySelector("#" + form_id_js + " [name='message']").value;
+            data_js['subject'] = subject;
+            data_js['text'] = message + '\n\nfrom email : ' + email;
+            var params = toParams(data_js);
+
+            request.open("POST", "https://postmail.invotes.com/send", true);
+            request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            request.send(params);
+
+            return false;
+        }
+
+        sendButton.onclick = js_send;
+
+        function toParams(data_js) {
+            var form_data = [];
+            for (var key in data_js) {
+                form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+            }
+
+            return form_data.join("&");
+        }
+
+        var js_form = document.getElementById(form_id_js);
+        js_form.addEventListener("submit", function (e) {
+            e.preventDefault();
+        });
+
+                    //# sourceURL=somename.js
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
