@@ -90,9 +90,35 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-lg-4 card">
                     <div class="image">
+                        <img id="neatfeatimg" class="img img-responsive" src="images/NeatFeat/Neatfeat1_Cropped.png" alt="neatfeat" />
+                        <div class="middle">
+                            <div id="neatfeatText" class="middleText">Neat Feat</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                    <div class="image">
+                        <img id="pictaphoneimg" class="img img-responsive" src="images/Pictaphone/pictaphone1.PNG" alt="pictaphone" />
+                        <div class="middle">
+                            <div id="pictaphoneText" class="middleText">Pictaphone</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                    <div class="image">
                         <img id="myImg" class="img img-responsive" src="images/chatapp/mainImg.PNG" alt="chatapp" />
                         <div class="middle">
                             <div id="chatappText" class="middleText">CHAT IT UP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                    <div class="image">
+                        <img id="gofishimg" class="img img-responsive" src="images/GoFish/gofishplayingcropped.png" alt="gofish" />
+                        <div class="middle">
+                            <div id="gofishText" class="middleText">Go Fish</div>
                         </div>
                     </div>
                 </div>
@@ -104,14 +130,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                <!-- <div class="col-xs-12 col-md-6 col-lg-4 card">
                     <div class="image">
                         <img id="gofishimg" class="img img-responsive" src="images/GoFish/gofishplayingcropped.png" alt="gofish" />
                         <div class="middle">
                             <div id="gofishText" class="middleText">Go Fish</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div id="firstModal" class="modal">
                 <span id="firstClose" class="close">&times;</span>
@@ -202,6 +228,52 @@
                         </div>
                         <p>A multi-player game application that incorporates multiple assemblies and WCF. </p>
                         <p>This application allows user to play Go fish with other players. A WCF service was implemented, hosted, configured and consume in a LAN computing environment.  </p>
+                    </div>
+                </div>
+            </div>
+            <div id="fourthModal" class="modal">
+                <span id="fourthClose" class="close">&times;</span>
+                <div class="row" style="background-color: white; display: flex; justify-content: space-evenly; align-items: center;">
+                    <div class="imgContainer col-lg-5 col-sm-12">
+                        <div>
+                            <video controls width="100%" height="100%">
+                                <source src="images/NeatFeat/neatfeat-productvideo_mute.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-6" style="padding: 3rem;">
+                        <h3>Neat Feat</h3>
+                        <hr class="line-heading">
+                        <div class="techTags row col-auto">
+                            <span class="tagstext">ReactJS</span>
+                            <span class="tagstext">react-redux</span>
+                        </div>
+                        <p>A user-friendly application for machine learning engineer to review, manipulate, and clean their data without having any programming language or experience. </p>
+                        <p>This application allows user to upload one or more csv file and show the raw data in tabular format, calculate the data and show meaningful numbers of the data in another table. The user can select rows to select, delete and select columns to transform to handle missing data, scale, normalize, mathematically combine, add polynomial features or delete the selected columns. They also can generate histogram and scatter chart with the data. After manipulation, the user can download the cleaned, transformed data as a csv file. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="fifthModal" class="modal">
+                <span id="fifthClose" class="close">&times;</span>
+                <div class="row" style="background-color: white; display: flex; justify-content: space-evenly; align-items: center;">
+                    <div class="imgContainer col-lg-5 col-sm-12">
+                        <div>
+                            <video controls width="80%" height="100%">
+                                <source src="images/Pictaphone/layout_Pictaphone.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-6" style="padding: 3rem;">
+                        <h3>Pictaphone</h3>
+                        <hr class="line-heading">
+                        <div class="techTags row col-auto">
+                            <span class="tagstext">Kotlin</span>
+                            <span class="tagstext">Android Studio</span>
+                            <span class="tagstext">Text Recognition</span>
+                            <span class="tagstext">Translation</span>
+                        </div>
+                        <p>A simple android translation application. </p>
+                        <p>This application allows user to take a photo, use their own image, or simply type in their own text to translate to English. The app uses MLKit OCR to recognize the text within the image and MLKit Translator to detect the language of the text and translate. It also has Text to Speech functionality which allows for people with visual impairment to take a photo of a sign and translate it, and be able to hear it on their phone if the are not able to read the writing. </p>
                     </div>
                 </div>
             </div>
@@ -359,15 +431,21 @@
         var modal1 = document.getElementById("firstModal");
         var modal2 = document.getElementById("secondModal");
         var modal3 = document.getElementById("thirdModal");
+        var modal4 = document.getElementById("fourthModal");
+        var modal5 = document.getElementById("fifthModal");
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var img1 = document.getElementById("myImg");
         var img2 = document.getElementById("doggowalkoimg");
-        var img3 = document.getElementById("gofishimg")
+        var img3 = document.getElementById("gofishimg");
+        var img4 = document.getElementById("neatfeatimg");
+        var img5 = document.getElementById("pictaphoneimg");
 
         var appText1 = document.getElementById("chatappText");
         var appText2 = document.getElementById("doggowalkoText");
         var appText3 = document.getElementById("gofishText");
+        var appText4 = document.getElementById("neatfeatText");
+        var appText5 = document.getElementById("pictaphoneText");
         appText1.onclick = function(){
         modal1.style.display = "block";
         }
@@ -389,11 +467,27 @@
         modal3.style.display = "block";
         }
 
+        appText4.onclick = function(){
+        modal4.style.display = "block";
+        }
+        img4.onclick = function(){
+        modal4.style.display = "block";
+        }
+
+        appText5.onclick = function(){
+        modal5.style.display = "block";
+        }
+        img5.onclick = function(){
+        modal5.style.display = "block";
+        }
+
         // Get the <span> element that closes the modal
         //var span = document.getElementsByClassName("close")[0];
         var close1 = document.getElementById("firstClose");
         var close2 = document.getElementById("secondClose");
         var close3 = document.getElementById("thirdClose");
+        var close4 = document.getElementById("fourthClose");
+        var close5 = document.getElementById("fifthClose");
 
         // When the user clicks on <span> (x), close the modal
         close1.onclick = function() {
@@ -404,6 +498,12 @@
         }
         close3.onclick = function() {
         modal3.style.display = "none";
+        }        
+        close4.onclick = function() {
+        modal4.style.display = "none";
+        }        
+        close5.onclick = function() {
+        modal5.style.display = "none";
         }
 
         //redirect connect page
