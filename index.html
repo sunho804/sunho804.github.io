@@ -90,6 +90,14 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-lg-4 card">
                     <div class="image">
+                        <img id="slackcloneimg" class="img img-responsive" src="images/slack-clone/slackclonePicCropped.PNG" alt="slackclone" />
+                        <div class="middle">
+                            <div id="slackCloneText" class="middleText">Slack Clone</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 card">
+                    <div class="image">
                         <img id="neatfeatimg" class="img img-responsive" src="images/NeatFeat/Neatfeat1_Cropped.png" alt="neatfeat" />
                         <div class="middle">
                             <div id="neatfeatText" class="middleText">Neat Feat</div>
@@ -104,6 +112,9 @@
                         </div>
                     </div>
                 </div>
+                
+            </div>
+            <div class="row mt-2">
                 <div class="col-xs-12 col-md-6 col-lg-4 card">
                     <div class="image">
                         <img id="myImg" class="img img-responsive" src="images/chatapp/mainImg.PNG" alt="chatapp" />
@@ -112,8 +123,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-2">
                 <div class="col-xs-12 col-md-6 col-lg-4 card">
                     <div class="image">
                         <img id="gofishimg" class="img img-responsive" src="images/GoFish/gofishplayingcropped.png" alt="gofish" />
@@ -277,6 +286,26 @@
                     </div>
                 </div>
             </div>
+            <div id="sixthModal" class="modal">
+                <span id="sixthClose" class="close">&times;</span>
+                <div class="row" style="background-color: white; display: flex; justify-content: space-evenly; align-items: center;">
+                    <div class="imgContainer col-lg-5 col-sm-12">
+                        <div class="slideImg">
+                            <img src="images/slack-clone/slackclonePic.PNG" />
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-6" style="padding: 3rem;">
+                        <h3>Slack clone</h3>
+                        <hr class="line-heading">
+                        <div class="techTags row col-auto">
+                            <span class="tagstext">ReactJS</span>
+                        </div>
+                        <p>A communication platform developed with ReactJS.  </p>
+                        <p>This application allows user to create channel and communicate in different channels.</p>
+                        <p>https://slack-clone-82fb7.web.app/</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="connectpage" class="content" style="height: 700px">
             <div class="header">
@@ -433,6 +462,7 @@
         var modal3 = document.getElementById("thirdModal");
         var modal4 = document.getElementById("fourthModal");
         var modal5 = document.getElementById("fifthModal");
+        var modal6 = document.getElementById("sixthModal");
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var img1 = document.getElementById("myImg");
@@ -440,12 +470,14 @@
         var img3 = document.getElementById("gofishimg");
         var img4 = document.getElementById("neatfeatimg");
         var img5 = document.getElementById("pictaphoneimg");
+        var img6 = document.getElementById("slackcloneimg");
 
         var appText1 = document.getElementById("chatappText");
         var appText2 = document.getElementById("doggowalkoText");
         var appText3 = document.getElementById("gofishText");
         var appText4 = document.getElementById("neatfeatText");
         var appText5 = document.getElementById("pictaphoneText");
+        var appText6 = document.getElementById("slackCloneText");
         appText1.onclick = function(){
         modal1.style.display = "block";
         }
@@ -481,6 +513,13 @@
         modal5.style.display = "block";
         }
 
+        appText6.onclick = function(){
+        modal6.style.display = "block";
+        }
+        img6.onclick = function(){
+        modal6.style.display = "block";
+        }
+
         // Get the <span> element that closes the modal
         //var span = document.getElementsByClassName("close")[0];
         var close1 = document.getElementById("firstClose");
@@ -488,6 +527,7 @@
         var close3 = document.getElementById("thirdClose");
         var close4 = document.getElementById("fourthClose");
         var close5 = document.getElementById("fifthClose");
+        var close6 = document.getElementById("sixthClose");
 
         // When the user clicks on <span> (x), close the modal
         close1.onclick = function() {
@@ -504,6 +544,9 @@
         }        
         close5.onclick = function() {
         modal5.style.display = "none";
+        }    
+        close6.onclick = function() {
+        modal6.style.display = "none";
         }
 
         //redirect connect page

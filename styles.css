@@ -135,6 +135,10 @@ footer {
   width: 100%;
 }
 
+.slideImg img {
+  width: 100%;
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
